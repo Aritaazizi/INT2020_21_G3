@@ -2,4 +2,4 @@
 Projekti ne lenden " Interneti " 
 
 Site eshte i hostuar ne 
-#https://testgr3.netlify.app
+https://testgr3.netlify.app

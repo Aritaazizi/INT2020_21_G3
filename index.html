@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <title>NEWS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> 
+    <link rel="stylesheet" href="/styles/style.css" />
+  <script src="/javascript.js"></script>
+    <title>NEWS24</title>
   </head>
   <body>
     <nav>
@@ -19,11 +20,13 @@
           <a href="/lajmet/teknologji.html">Tech</a>
           <a href="/lajmet/fun.html">Fun</a>
         </div></li>
-         
-        
-        <li><a href="#">Regjistrohu</a></li>
-        <li><a href="#">Kycu</a></li>
         <li><a href="/staff.html">Stafi</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li class="dropdown"><a href="#" class ="dropdown-btn"><i class=" fa fa-user-circle"></i></a>
+          <div class="dropdown-menu">
+          <a href="#" onclick="openKycu()">Kycu</a>
+          <a href="#" onclick="openRegjistrohu()">Regjistrohu</a>
+          </div></li>
       </ul>
       <ul class="social-icons">
         <li>
@@ -48,7 +51,10 @@
          <div class="kerko-box">
    <input type="text" class="kerko-txt" placeholder="   K&euml;rko..."/>
    <a class="kerko-btn">
- <i class="fa fa-search"></i>
-   </a>
+ <i class="fa fa-search"></i></a>
+ </ul></div>
+
+
+
   </body>
 </html>

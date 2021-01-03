@@ -18,7 +18,7 @@ nav {
   .nav-links {
   display:inline-flex;
   align-items: center;
-  width: 70%;
+  width: 68%;
   justify-content: space-around;
   list-style: none;
 }
@@ -47,15 +47,12 @@ nav {
   float: left;
 }
 
-logo {
-  margin: auto;
-}
 .logo {
   float: left;
   font-family: "Raleway", sans-serif;
   list-style: none;
   margin-top: 1px;
-  background-color: white;
+  background-color: lightgray;
   padding: 10px;
   width: 100%;
   border-radius: 5px;
@@ -93,7 +90,7 @@ logo {
 
 .kerko-btn {
   position: absolute;
-  top: 3px;
+  top: 6.5px;
   left: 222px;
   color: #e84118;
   float: right;
@@ -274,3 +271,4 @@ li.dropdown{
 .dropdown:hover .dropdown-menu{
  display:block;
 }
+

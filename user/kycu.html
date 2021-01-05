@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+   
 <head>
     <title> Kycu </title>
     <link rel="stylesheet" href="/user/kycu.css">
-    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <script src="/javascript.js"></script>
 </head>
 <body>
-<div class="login">
-   <form class="login-form">
 
-<input type="text" placeholder="Shfrytezuesi">
-<input type="password" placeholder="Fjalekalimi">
+<form class="kycu">
+       
+<h1>Kycu</h1>
 
+<input type="text" placeholder="Shfrytezuesi" required/>
+<input type="password" placeholder="Fjalekalimi" required/>
+<input type="submit" name="" value="Kycu">
 
-
-
-   </form>
+<p>Nuk keni llogari?</p>
+<a href="/user/regjistrohu.html">Regjistrohu</a>
+<div class="socialmedia">
+    <div class="item">
+        <a href="www.facebook.com"><i class="fa fa-facebook" ></i></a>
     </div>
-
+    <div class="item">
+        <a href="www.instagram.com"><i class="fa fa-instagram"></i></a>
+    </div>
+    <div class="item">
+        <a href="www.google.com"><i class="fa fa-google"></i></a>
+    </div>
+</div>
+</form>
+<button class="btn-toggle" onclick="darkmode()">Dark Mode</button>
 </body>
 </html>

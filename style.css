@@ -272,3 +272,17 @@ li.dropdown{
  display:block;
 }
 
+#wholepage{
+  margin:auto;
+  padding:auto;
+  width:1300px;
+}
+article{
+  margin-left:80px;
+  font-family: "Raleway", sans-serif;
+}
+.newLine{
+	width: 450px;
+  font-family: "Raleway", sans-serif;
+  word-wrap: break-word;
+}

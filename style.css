@@ -42,7 +42,11 @@ nav {
 }
 .nav-links li {
   color: white;
+<<<<<<< HEAD
   display:inline-flex; 
+=======
+  display:inline-flex;
+>>>>>>> db08892281525fc19d06ccafb4c547983b2eb122
   text-decoration: none;
   float: left;
 }

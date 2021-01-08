@@ -42,7 +42,7 @@ nav {
 }
 .nav-links li {
   color: white;
-  display:inline-flex; 
+  display:inline-flex;
   text-decoration: none;
   float: left;
 }
@@ -271,18 +271,108 @@ li.dropdown{
 .dropdown:hover .dropdown-menu{
  display:block;
 }
-
-#wholepage{
-  margin:auto;
-  padding:auto;
-  width:1300px;
-}
-article{
+.container {
+  position: relative;
   margin-left:80px;
-  font-family: "Raleway", sans-serif;
+  margin-right:80px;
+  margin-top:20px;
+  height:400px;
+
 }
-.newLine{
-	width: 450px;
-  font-family: "Raleway", sans-serif;
-  word-wrap: break-word;
+element.style {
+}
+#showcase {
+    color: #fff;
+    background: var(--dark-color);
+    padding: 2rem;
+    position: relative;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+user agent stylesheet
+header {
+    display: block;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    background: var(--light-color);
+}
+:root {
+    --primary-color: #c72727;
+    --secondary-color: #f99500;
+    --light-color: #f1f1f1;
+    --dark-color: #333;
+    --max-width: 1100px;
+}
+#showcase:before {
+    content: '';
+    background: url(../img/featured.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+.sporti {
+  width:100%;
+  height:100%;
+  background-repeat: no-repeat;
+}
+#showcase{
+  color: #fff;
+  background: var(--dark-color);
+  padding: 2rem;
+  position: relative;
+}
+#showcase:before{
+  content: '';
+  background: url('../images/fotball.jpg') no-repeat center fixed;
+  background-size: 1400px 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+/* Articles */
+#home-articles .articles-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+#home-articles .articles-container > *:first-child,
+#home-articles .articles-container > *:last-child{
+  display: grid;
+  grid-template-columns: 	repeat(2, 1fr);
+  grid-gap: 1rem;
+  grid-column: span 2;
+  align-items: center;
+}
+#home-articles .articles-container > *:last-child{
+  grid-column: span 2;
+}
+#article .meta{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+}
+#article .meta .category{
+  margin-top: 0.4rem;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Staatliches', cursive;
+  margin-bottom: .75rem;
+  line-height: 1.3;
+}
+.shiriti{
+  margin-left:420px;
+  margin-top: -280px;
 }

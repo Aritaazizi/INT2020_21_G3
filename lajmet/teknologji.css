@@ -304,6 +304,8 @@
     padding: 20px;
     font-size: 12px;
     margin: 20px 0;
+    border-style: outset;
+    
   }
 
   .current-news-head h3{

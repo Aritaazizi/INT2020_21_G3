@@ -274,7 +274,7 @@
   
   /* banner */
 
-  .vertical-header >h1 {
+  .vertical-header {
     display: block;
     margin: 130px;  
   }

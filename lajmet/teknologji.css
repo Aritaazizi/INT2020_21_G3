@@ -274,9 +274,19 @@
   
   /* banner */
 
-  .vertical-header {
-    display: block;
-    margin: 130px;  
+ header{
+    margin-top: 130px; 
+    color: #022252;
+    font-size: 18px;
+    font-family: 'Monsterrat' , sans-serif;
+    letter-spacing: 2px;
+    padding-top: 30px;
+    padding-left: 20px;
+
+  }
+
+  header:first-letter{
+    font-size: 60px;
   }
 
   .banner{
@@ -284,44 +294,31 @@
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    padding: 30px 0;
-    margin-top: 8px;
-  }
+  } 
 
-  .banner-main-content{
-    padding:0 2rem;
-    line-height: 1.7;
-  }
-
-  .banner-main-content h2{
-    color: #022252;
-    font-size: 2rem;
-    font-family: 'Monsterrat' , sans-serif;
+ 
+  .current-news-head {
+    background-color: #d3d3d31a;
+    padding: 20px 32px;
+    font-size: 12px;
+    border-right: 3px solid #022252;
+    line-height: 1.6;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   
-  .current-news-head{
-    background: white;
-    padding: 20px;
-    font-size: 12px;
-    margin: 20px 0;
-    border-style: outset;
-    
-  }
-
-  .current-news-head h3{
+  .current-news-head h3 {
     color: #022252;
     padding:6px;
     cursor:pointer;
     position: relative;
     font-size: 16px; 
     font-family: 'Monsterrat', sans-serif;
-
   }
 
-  .current-news-head h3:hover::before{
-    content:">>";
-    position: absolute;
-    left: -12px;
+
+  .current-news-head h3:hover {
+    text-decoration: underline;
   }
 
   .current-news-head span{
@@ -330,7 +327,7 @@
     text-transform: uppercase;
     font-size: 10px;
   }
-  
+
   
   .topic{
     overflow: hidden;
@@ -358,16 +355,18 @@
   
   .topic h2{
     padding: 10px 0;
-    font-size: 18px;
+    font-size: 16px;
     text-shadow: 0 0 3px
     #000;
+    font-family: 'Raleway', sans-serif;
   }
   
  .topic p{
     padding: 12px 10px;
-    font-size: 16px;
+    font-size: 14px;
     text-shadow: 0 0 3px
     #000;
+    font-family: 'Raleway', sans-serif;
   }
   
   .topic-content a{
@@ -378,11 +377,12 @@
     border-radius: 2px;
     text-align: center;
     padding: 6px 10px;
-    font-size: 12px;
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     margin: 10px 0 20px 10px;
     text-decoration: none;
     color: black;
-    font-weight: bold;
   }
   
   .topic-content a:hover{
@@ -400,6 +400,7 @@
 .banner-sub-content{
   display: grid;
   grid-template-columns: repeat(2,1fr);
+  margin-top: -90px;
 }
 } 
 
@@ -409,6 +410,7 @@
     grid-template-columns: 1fr 2fr;
   }
 }
+
 
 hr{
   width: 100%;

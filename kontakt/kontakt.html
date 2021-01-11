@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://kit.fontawesome.com/5949bf5693.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+        <link rel="stylesheet" href="../kontakt/kontakt.css" type="text/css" media="all">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+  <script>
+      function myFunction() {
+    var message, x,y,z;
+    message = document.getElementById("message");
+    message.innerHTML = "";
+    x = document.forms["myForm"]["emri"].value;
+    y = document.forms["myForm"]["mbiemri"].value;
+    z = document.forms["myForm"]["mesazhi"].value;
+    try { 
+        if(x == "") { throw alert("Emri nuk eshte dhene")}
+                if(y == "") { throw alert("Mbiemri nuk eshte dhene")}
+           
+       if(z == "") { throw alert("Nuk ke shkruar mesazh!! ")}
+         else{
+           alert("Mesazhi u dergua")};
+      
+    }
+    catch(padefinuar) {
+        message.innerHTML = "Contact is " + padefinuar;
+    }
+}
+
+  </script>
+    <div class="box">
+            <p class="header">Permes ketij formulari mund te na kontaktoni permes email apo te na vizitoni ne objekt.</p>
+            <fieldset><legend><h2>Kontakti</h2></legend></fieldset>
+            <p><i class="fas fa-map-marker-alt"></i>Rr.Agim Ramadani, Prishtine</p>
+           <p><i class="fas fa-phone"></i>044 123 456</P>
+            <p><i class="fas fa-globe-europe"></i><a href="www.testgr3.netlify.app">www.testgr3.netlify.app</a></p>
+            <p><i class="fas fa-envelope-open "></i> news@gmail.com</p>
+            <p style="font-family:Quattrocento,serif; border:3px solid darkmagenta" >Jepni te dhenat tuaja dhe pastaj na shkruani mesazh!</p>
+            <form name="kontakt" action="mailto:blabla@blabla.com"method="post" autocomplete="on"enctype="text/plain">
+        <p>Emri<input id="emri" name="emri" type="text" autocomplete="off" placeholder="Emri juaj..."required></p>
+        <p>Mbiemri<input id="mbiemri" name="mbiemri" type="text" autocomplete="off" placeholder="Mbiemri juaj..." required></p>
+        <p>Email<input id ="email" name="email"type="email" autocomplete="on"placeholder="Emaili juaj..."required></p>
+    <p>Mesazhi<input id="mesazhi" name="mesazhi" type="text" placeholder="Shkruani mesazhin tuaj..." size="200"required ></p>
+    <p>Bashkangjitje<input id="file" name="file"type="file" ></p>
+       <p><input id="sub" type="submit" value="dergo" onclick="myfunction()">
+    <input id="fshij" type="reset" value="fshij"></p>
+</form>
+       <p id="message"></p>
+       
+       
+       
+        </div>
+    </div>
+    </body>
+</html>

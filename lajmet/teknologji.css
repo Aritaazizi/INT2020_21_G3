@@ -274,18 +274,17 @@
   
   /* banner */
 
- header{
+ h1{
     margin-top: 130px; 
     color: #022252;
-    font-size: 18px;
+    font-size: 32px;
     font-family: 'Monsterrat' , sans-serif;
     letter-spacing: 2px;
     padding-top: 30px;
     padding-left: 20px;
+}
 
-  }
-
-  header:first-letter{
+  h1:first-letter{
     font-size: 60px;
   }
 
@@ -394,7 +393,7 @@
   .topic-content h2{
     font-size:16px;
   }
-}
+} 
 
 @media(min-width:768px){
 .banner-sub-content{
@@ -415,4 +414,4 @@
 hr{
   width: 100%;
   margin: 0 auto;
-}
+} 

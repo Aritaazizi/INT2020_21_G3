@@ -27,9 +27,21 @@
     }
     catch(padefinuar) {
         message.innerHTML = "Contact is " + padefinuar;
-    }
-}
+    }}
+   
+   
+        let ndryshoNgjyrat = () =>
+        {
+            var time = new Date().getHours();
+            
+            if(time >= 16){
+            document.body.style.backgroundColor = "#000000";
+            }
+        }
+        
+        setInterval(ndryshoNgjyrat, 1000);
 
+   
   </script>
     <div class="box">
             <p class="header">Permes ketij formulari mund te na kontaktoni permes email apo te na vizitoni ne objekt.</p>

@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
         <link rel="stylesheet" href="../kontakt/kontakt.css" type="text/css" media="all">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="../javascript.js"></script>
     </head>
     <body>
   <script>
@@ -41,8 +42,10 @@
         }
         
         ndryshoNgjyrat();
+        var x = document.getElementById("demo");
 
-   
+
+
   </script>
     <div class="box">
             <p class="header">Permes ketij formulari mund te na kontaktoni permes email apo te na vizitoni ne objekt.</p>
@@ -61,11 +64,46 @@
        <p><input id="sub" type="submit" value="dergo" onclick="myfunction()">
     <input id="fshij" type="reset" value="fshij"></p>
 </form>
-       <p id="message"></p>
-       
-       
-       
+<p style="color:darkmagenta; border:3px solid darkmagenta;">Klikoni ne buton per te gjetur koordinatat tuaja.</p>
+
+<button style="width:100px;height:30px;left:100px;margin:20px;margin-left:700px;" onclick="getLocation()">Try It</button>
+
+<p style="margin-left:550px;"id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+<div id="div1" style="width:500px;height:300px;border:3px solid darkmagenta;" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="../Images//map1.png" width="495" height="295" draggable="true" ondragstart="drag(event)" id="drag1"></div><br /><br />
+  <div id="div2" style="margin-left:850px; margin-top:-350px;width:500px;height:300px;border:3px solid darkmagenta; resize:both;overflow:auto; display:flex;" ondrop="drop(event)" ondragover="allowDrop(event)">
         </div>
-    </div>
+        <a href="bonus.html"><button style="background-color: darkmagenta; color:white; font-family:Quattrocento,serif; width:100px; margin-left:600px;border-radius: 24px;height:20px; ">BONUS</button></a>
     </body>
 </html>

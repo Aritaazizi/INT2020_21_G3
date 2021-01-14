@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html manifest="manifest.appcache">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> 
+    <link rel="stylesheet" href="bonus.css"/>
+    <script src="javascript.js"></script>
+    <script src="jquery/jquery-3.3.1.js"></script>
+  </head>
+    <body>
+        <script>
+            function clickCounter() {
+              if (typeof(Storage) !== "undefined") {
+                if (sessionStorage.clickcount) {
+                  sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+                } else {
+                  sessionStorage.clickcount = 1;
+                }
+                document.getElementById("result").innerHTML = "Ju keni klikuar butonin " + sessionStorage.clickcount + " here.";
+              } else {
+                document.getElementById("result").innerHTML = "Na falni, browseri juaj nuk e perkrah web storage.";
+              }
+            }
+            function clicklocalCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("rez").innerHTML = "Ju keni klikuar butonin " + localStorage.clickcount + " here.";
+  } else {
+    document.getElementById("rez").innerHTML = "Na falni, browseri juaj nuk e perkrah web storage.";
+  }
+}
+
+            </script>
+    
+          <div class="storage">
+            <p><button style="margin-left:200px;border-radius: 24px;width:80px;height:24px;" onclick="clickCounter()" type="button">SESSION!</button></p>
+            <div id="result"></div>
+            <p>Klikoni butonin qe te rritet numri.</p>
+            <p>Mbyllni tab dhe hapeni prape qe te resetohet numri, perndryshe do te ruhet.</p> 
+            <p><button style="margin-left:200px;border-radius: 24px;width:80px;height:24px;" onclick="clicklocalCounter()" type="button">LOCAL!</button></p>
+            <div id="rez"></div>
+            <p>Klikoni butonin qe te rritet numri.</p>
+            <p>Ky numer nuk mund te resetohet.</p>
+        </div>
+        <
+        </body>
+</head>
+</html>

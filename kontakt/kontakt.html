@@ -30,16 +30,17 @@
     }}
    
    
-        let ndryshoNgjyrat = () =>
+        function ndryshoNgjyrat()
         {
             var time = new Date().getHours();
             
             if(time >= 16){
             document.body.style.backgroundColor = "#000000";
             }
+            setTimeout(ndryshoNgjyrat,1000);
         }
         
-        setInterval(ndryshoNgjyrat, 1000);
+        ndryshoNgjyrat();
 
    
   </script>

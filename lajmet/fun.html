@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> 
+    <link rel="stylesheet" href="../style.css" />
+  <script src="../javascript.js"></script>
+  <script>
+      
+    function openKycu(){
+        window.open("../user/kycu.html","_blank","top=40,bottom=400,left=600,height=600,width=600");
+    }
+    function openRegjistrohu(){
+        window.open("../user/regjistrohu.html","_blank","top=0,left=200,height=700,width=1000");
+    }
+    
+  </script>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.html">Kryefaqja</a></li>
+        <li class="dropdown"><a href="#" class="dropdown-btn">Lajme</a>
+        <div class="dropdown-menu">
+          <a href="../lajmet/sport.html">Sport</a>
+          <a href="../lajmet/teknologji.html">Tech</a>
+          <a href="../lajmet/fun.html">Fun</a>
+        </div></li>
+        <li><a href="../stafi/staff.html">Stafi</a></li>
+        <li><a href="../kontakt/kontakt.html">Kontakt</a></li>
+        <li class="dropdown"><a href="#" class ="dropdown-btn"><i class=" fa fa-user-circle"></i></a>
+          <div class="dropdown-menu">
+          <a href="#" onclick="openKycu()">Kycu</a>
+          <a href="#" onclick="openRegjistrohu()">Regjistrohu</a>
+          </div></li>
+      </ul>
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.instagram.com" class="c1" target="_blank"><i class="fa fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="https://www.github.com" class="c2" target="_blank"><i class="fa fa-github"></i></a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" class="c3" target="_blank"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="https://web.facebook.com/?_rdc=1&_rdr" class="c4" target="_blank"><i class="fa fa-facebook"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+  <html>
+  <head>
+  <title>Fun</title>
+  <meta charset="utf-8" />
+  <link href="fun.css" rel="stylesheet">
+ </head>
+ <body style="background-color:lightgray;"></body>  
+<body>
+    <h1><p>FUN</p></h1>
+</body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#more {display: none;}
+</style>
+
+<div class="row">
+    <div class="column">
+      <img src="../images/caj.jpg" alt="caj" width="100%" height="300px"><br><a href="fun/a1.html">Çajrat që ju bëjnë mirë për flokët dhe fytyrën</a>
+    </div>
+    <div class="column">
+      <img src="../images/chamomile-tea.jpg" alt="caj kamomili" width="100%" height="300px"><br><a href="fun/a2.html">Dobitë shëndetësore që gjenden në një filxhan me çaj kamomili dhe dafine</a>
+    </div>
+    <div class="column">
+      <img src="../images/kumbulla.jpg" alt="kumbulla te thata" width="100%" height="300px"><br><a href="fun/a3.html">Dieta me kumbulla të thata</a>
+    </div>
+  </div>
+  <span id="content"></span><span id="more">  
+<div class="row">
+    <div class="column">
+      <img src="../images/oldest-woman.jpg" alt="personi me i vjeter" width="100%" height="300px"><br><a href="​fun/a4.html">​Personi më i vjetër në botë festoi ditëlindjen</a>
+    </div>
+    <div class="column">
+      <img src="../images/tree.png" alt="Krishtlindjet" width="100%" height="300px"><br><a href="fun/a5.html">Zanafilla dhe tradita e Krishtlindjes</a>
+    </div>
+    <div class="column">
+      <img src="../images/google.png" alt="kerkimet me te shpeshta" width="100%" height="300px"><br><a href="fun/a6.html">10 kërkimet më të shpeshta në Google këtë vit</a>
+    </div>
+  </div>
+  </span>
+  <button onclick="myFunction()" id="btn">Lexo me shume</button>
+  <script>
+    function myFunction() {
+      var dots = document.getElementById("content");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("btn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Lexo me shum"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Lexo me pak"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
+<script>
+    (function() {
+        var s = document.getElementById('btn').style,
+            f = false;
+            c1 = '#000000',
+            c2 = '#154360';
+    
+        setInterval(function() {
+            s.backgroundColor = f ? c1 : c2;
+            f = !f;
+        },2000);
+    })();
+    </script>
+
+</body>
+</html>

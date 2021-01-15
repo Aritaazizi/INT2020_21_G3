@@ -291,7 +291,7 @@
   .banner{
     min-height: auto;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
   } 
 
@@ -306,18 +306,13 @@
     margin-right: 20px;
   }
   
-  .current-news-head h3 {
+   .current-news-head li {
     color: #022252;
     padding:6px;
-    cursor:pointer;
     position: relative;
     font-size: 16px; 
     font-family: 'Monsterrat', sans-serif;
-  }
-
-
-  .current-news-head h3:hover {
-    text-decoration: underline;
+    font-weight: bold;
   }
 
   .current-news-head span{
@@ -389,29 +384,21 @@
   }
 
 
-@media(max-width: 460px){
+
   .topic-content h2{
     font-size:16px;
   }
-} 
 
-@media(min-width:768px){
+
+
 .banner-sub-content{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   margin-top: -90px;
 }
-} 
 
 
-@media(min-width: 1080px){
-  .banner{
-    grid-template-columns: 1fr 2fr;
-  }
-}
-
-
-hr{
+  hr{
   width: 100%;
   margin: 0 auto;
 } 

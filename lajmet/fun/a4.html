@@ -81,9 +81,13 @@
         <hr>
         <img src="../../images/oldest-woman.jpg" alt="personi me i vjeter" width="500px" height="500px">
         <hr>
-        <p>Kane Tanaka, një banore e Fukuoka, e cila sipas të dhënave të Librit të Rekordeve Guinness është personi më i vjetër i gjallë në botë, mbushi 118-vjeç.</p>
-        <p>Kane, një grua japoneze e lindur më 2 janar 1903, e cila jeton në një shtëpi pleqsh në Fukuoka, Japoni perëndimore, festoi 118-vjetorin e lindjes.</p>
-        <p>Ajo shprehu shpresën se do të jetonte 120 vjet. Kane, e cila ushtron rregullisht, deklaroi se nuk kapërcen vaktet e përditshme dhe gjatë pandemisë, ajo nuk takohet me anëtarët e familjes</p>
-     </article>
-</body>
-</html> 
+    
+        <p id="em"></p>
+        <script>
+        var person = ["Kane", "Tanaka", 118, "2 janar 1903", "Fukoka", "Japoni"];
+        document.getElementById("em").innerHTML = 
+        "<p>" + person[0] + " " + person[1] + ", një banore e " + person[4] + ", e cila sipas të dhënave të Librit të Rekordeve Guinness është personi më i vjetër i gjallë në botë, mbushi " + person[2] + "-vjeç. " + "</p>" + "<p>"+ person[0] + ", një grua japoneze e lindur më " + person[3] + ", e cila jeton në një shtëpi pleqsh në " + person[4] + ", " + person[5] + " perëndimore, festoi " + person[2] + "-vjetorin e lindjes."+ "</p>" + "<p>" + " Ajo shprehu shpresën se do të jetonte 120 vjet. " + person[0] + ", e cila ushtron rregullisht, deklaroi se nuk kapërcen vaktet e përditshme dhe gjatë pandemisë, ajo nuk takohet me anëtarët e familjes." + "</p>";
+        </script> 
+      </article>     
+      </body>
+      </html>   

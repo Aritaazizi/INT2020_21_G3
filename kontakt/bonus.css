@@ -22,17 +22,8 @@ left:500px;
 top:20px;
 padding:10px;
 }
-<<<<<<< HEAD
 canvas {
     border:1px solid #d3d3d3;
     background-color: #f1f1f1;
     position: absolute; top: 370px; left: 780px;
 }
-=======
-
-canvas {
-    height: 350px;
-    margin-top: 80px;
-    margin-left: 80px;
-}
->>>>>>> 4693449a2722170ad93fc093b8d882bd742cabf6

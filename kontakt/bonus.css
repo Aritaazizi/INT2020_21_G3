@@ -18,3 +18,9 @@ left:500px;
 top:20px;
 padding:10px;
 }
+
+canvas {
+    height: 350px;
+    margin-top: 80px;
+    margin-left: 80px;
+}

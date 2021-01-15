@@ -81,13 +81,12 @@
         <hr>
         <img src="../../images/oldest-woman.jpg" alt="personi me i vjeter" width="500px" height="500px">
         <hr>
-        <p></p>  
-     
+    
         <p id="em"></p>
         <script>
-        var person = {firstName:"Kane", lastName:"Tanaka", age: 118, birthday: "2 janar 1903", place:"Fukoka", state:"Japoni"};
+        var person = ["Kane", "Tanaka", 118, "2 janar 1903", "Fukoka", "Japoni"];
         document.getElementById("em").innerHTML = 
-        person.firstName + " " + person.lastName + ", një banore e " + person.place + ", e cila sipas të dhënave të Librit të Rekordeve Guinness është personi më i vjetër i gjallë në botë, mbushi " + person.age + "-vjeç. " + person.firstName + ", një grua japoneze e lindur më " + person.birthday + ", e cila jeton në një shtëpi pleqsh në " + person.place + ", " + person.state + " perëndimore, festoi " + person.age + "-vjetorin e lindjes. Ajo shprehu shpresën se do të jetonte 120 vjet. " + person.firstName + ", e cila ushtron rregullisht, deklaroi se nuk kapërcen vaktet e përditshme dhe gjatë pandemisë, ajo nuk takohet me anëtarët e familjes.";
+        "<p>" + person[0] + " " + person[1] + ", një banore e " + person[4] + ", e cila sipas të dhënave të Librit të Rekordeve Guinness është personi më i vjetër i gjallë në botë, mbushi " + person[2] + "-vjeç. " + "</p>" + "<p>"+ person[0] + ", një grua japoneze e lindur më " + person[3] + ", e cila jeton në një shtëpi pleqsh në " + person[4] + ", " + person[5] + " perëndimore, festoi " + person[2] + "-vjetorin e lindjes."+ "</p>" + "<p>" + " Ajo shprehu shpresën se do të jetonte 120 vjet. " + person[0] + ", e cila ushtron rregullisht, deklaroi se nuk kapërcen vaktet e përditshme dhe gjatë pandemisë, ajo nuk takohet me anëtarët e familjes." + "</p>";
         </script> 
       </article>     
       </body>
